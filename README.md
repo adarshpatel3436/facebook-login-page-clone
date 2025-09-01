@@ -19,4 +19,9 @@ This is a simple clone of the Facebook login page created using HTML and CSS. It
 - **HTML5**: For the structure of the webpage.
 - **CSS3**: For styling and layout.
 
-
+How to access the webpage:-
+Clone the repository
+Open in VSCode
+Click on the 'index.html' file
+Right click and select 'Open in Default Browser'
+These instructions are only for VSCode IDE. If using other IDEs, please check how to open html files in those respective IDEs
