@@ -1,0 +1,123 @@
+/* General Body Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif; /* Changed font */
+    background-color: #f0f2f5;
+}
+
+.facebook-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Adjusted spacing */
+    align-items: center;
+    width: 100%;
+    max-width: 980px; /* Added max-width for better layout */
+}
+
+/* Left Side: Logo and Textbox */
+.textbox {
+    padding-right: 40px; /* Added some space */
+    max-width: 500px;
+}
+
+.logo {
+    font-size: 58px; /* Increased font size */
+    color: #1877f2; /* Corrected Facebook blue color */
+    margin-bottom: 10px;
+}
+
+.textbox h2 { /* Changed from p to h2 */
+    font-size: 28px; /* Increased font size */
+    font-weight: normal; /* Normal font weight */
+    line-height: 32px;
+}
+
+/* Right Side: Login Form */
+.login form {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 20px;
+    width: 396px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+form input {
+    border: 1px solid #dddfe2;
+    outline: none;
+    padding: 14px 16px; /* Adjusted padding */
+    margin-bottom: 12px;
+    font-size: 17px; /* Adjusted font size */
+    border-radius: 6px;
+}
+
+form input:focus {
+    border-color: #1877f2;
+    box-shadow: 0 0 0 2px #e7f3ff;
+}
+
+form .login-btn { /* Changed class name */
+    outline: none;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 6px;
+    background: #1877f2; /* Corrected blue */
+    color: #fff;
+    font-size: 20px; /* Increased font size */
+    font-weight: bold; /* Made text bold */
+    cursor: pointer;
+}
+
+form a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px; /* Adjusted font size */
+    color: #1877f2;
+    padding-top: 12px;
+}
+
+form hr {
+    border: 1px solid #dddfe2;
+    margin: 20px 0; /* Adjusted margin */
+}
+
+form .create-account {
+    outline: none;
+    border: none;
+    background: #42b72a; /* Corrected green color */
+    padding: 14px 16px; /* Adjusted padding */
+    border-radius: 6px;
+    font-size: 17px; /* Adjusted font size */
+    font-weight: bold; /* Made text bold */
+    color: #fff;
+    width: fit-content;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.login p {
+    margin-top: 28px;
+    font-size: 14px; /* Adjusted font size */
+    text-align: center;
+}
+
+/* Responsive styles remain mostly the same */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .textbox {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+}
